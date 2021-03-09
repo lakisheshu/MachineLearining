@@ -4,4 +4,13 @@
   df.loc(filter,'col_to_display')
   #To filter the strings in data frame
   df['col_name'].str.contains('value') --> gives all values where string  matches
+   we can perform and ,or operation by using & ,|
+   filt=(df["<col_name>"]== "searching string") & (df["<col_name>"]== "searching string")
+   df.loc[filt,'wanted_column']
+   we can filter a string in list by usinf "isin" as follows --> countries=['ind','aus','eng']
+   filt=df['count'].isin(countires)
+   df.loc[filt,'column_name']
+   
+   
+   
   
