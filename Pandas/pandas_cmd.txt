@@ -1,0 +1,7 @@
+  #Filters in pandas
+  filt=df["<col_name>"]== "searching string" --> it wil returns the matched values with true or flase only
+  df.apply(filt) or df[filt] --> will give all columns of matched strings
+  df.loc(filter,'col_to_display')
+  #To filter the strings in data frame
+  df['col_name'].str.contains('value') --> gives all values where string  matches
+  
